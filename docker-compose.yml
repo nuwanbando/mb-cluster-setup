@@ -1,0 +1,33 @@
+version: '2'
+services:
+  database:
+    container_name: database
+    build: 
+        context: .
+        dockerfile: database/Dockerfile
+    ports:
+     - "3306:3306"
+    environment:
+        MYSQL_ROOT_PASSWORD: root
+  mb1:
+    container_name: mb1
+    depends_on:
+      - database 
+    build: 
+        context: .
+        dockerfile: mb1/Dockerfile
+    ports:
+     - "9763:9763"
+     - "9443:9443"
+
+  mb2:
+    container_name: mb2
+    depends_on:
+      - database 
+      - mb1
+    build: 
+        context: .
+        dockerfile: mb2/Dockerfile
+    ports:
+     - "9764:9763"
+     - "9444:9443"
