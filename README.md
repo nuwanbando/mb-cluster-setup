@@ -12,4 +12,10 @@ $docker-compose up -d mb1
 ## to start the second mb node
 $docker-compose up -d mb2
 
+## configure the MB
+create a message queue named "sampleQ"
+
+## start the ESB
+$docker-compose up -d esb
+
 ```

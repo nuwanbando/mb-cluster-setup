@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<project name="maven-antrun-" default="main"  >
+<target name="main">
+  <property name="compile_classpath" refid="maven.compile.classpath"/>
+  <property name="outputDir" value="/Users/Akalanka/git/product-mb/modules/samples/product/HierarchicalTopicsSubscriber/target/classes"/>
+  <property name="sourceDir" value="/Users/Akalanka/git/product-mb/modules/samples/product/HierarchicalTopicsSubscriber/src/main/java"/>
+  <ant antfile="build.xml"/>
+</target>
+</project>

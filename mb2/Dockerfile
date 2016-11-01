@@ -19,6 +19,8 @@ COPY mb2/config/registry.xml /wso2/wso2mb-3.1.0/repository/conf/registry.xml
 
 COPY mb2/config/user-mgt.xml /wso2/wso2mb-3.1.0/repository/conf/user-mgt.xml
 
+COPY mb2/config/log4j.properties /wso2/wso2mb-3.1.0/repository/conf/log4j.properties
+
 CMD ["sh", "/wso2/wso2mb-3.1.0/bin/wso2server.sh"]
 
 EXPOSE 9763
