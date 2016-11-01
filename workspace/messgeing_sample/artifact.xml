@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><artifacts>
+    <artifact name="msg-api" groupId="com.example.messgeing_sample.api" version="1.0.0" type="synapse/api" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/api/msg-api.xml</file>
+    </artifact>
+    <artifact name="SampleMsgStore" groupId="com.example.messgeing_sample.message-store" version="1.0.0" type="synapse/message-store" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/message-stores/SampleMsgStore.xml</file>
+    </artifact>
+    <artifact name="samplingSeq" groupId="com.example.messgeing_sample.sequence" version="1.0.0" type="synapse/sequence" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/sequences/samplingSeq.xml</file>
+    </artifact>
+    <artifact name="sampleProc" groupId="com.example.messgeing_sample.message-processors" version="1.0.0" type="synapse/message-processors" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/message-processors/sampleProc.xml</file>
+    </artifact>
+</artifacts>

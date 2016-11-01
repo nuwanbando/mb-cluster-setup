@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<api context="/msg" name="msg-api" xmlns="http://ws.apache.org/ns/synapse">
+    <resource methods="POST">
+        <inSequence>
+            <log>
+                <property name="FIRST_MSG" value="###MSG_IN###"/>
+            </log>
+            <store messageStore="SampleMsgStore"/>
+            <payloadFactory media-type="json">
+                <format>{ "message": "message droped to the store"}</format>
+                <args/>
+            </payloadFactory>
+            <respond/>
+        </inSequence>
+        <outSequence/>
+        <faultSequence/>
+    </resource>
+</api>
