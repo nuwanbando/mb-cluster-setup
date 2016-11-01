@@ -1,1 +1,0 @@
-WSO2 Message Broker v3.1.0
